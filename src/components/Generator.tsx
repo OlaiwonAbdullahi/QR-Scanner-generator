@@ -14,7 +14,7 @@ function Generator() {
   }
 
   return (
-    <div>
+    <div className="bg-gray-300">
       {generatedText && (
         <a href="#" download={QRCode}>
           <QRCode value={generatedText} fgColor="#0e0118" className="mt-10" />
@@ -22,7 +22,7 @@ function Generator() {
       )}
       <div className="input-here mt-4">
         <input
-          className="border-gray-900 border-2 rounded-l-lg mt-8 h-7 text-gray-900"
+          className="border-gray-900 border-2 rounded-l-lg mt-8 h-7 text-gray-900 p-2"
           placeholder="Paste Your Link ....."
           type="text"
           value={text}

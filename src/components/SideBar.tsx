@@ -1,5 +1,6 @@
 import Code from "../assets/Qr-code.svg";
 import Scanner from "../assets/Scanner.svg";
+import GitHub from "../assets/github.svg";
 
 function SideBar() {
   return (
@@ -9,7 +10,6 @@ function SideBar() {
           QRSG
         </div>
         <div className="flex flex-col justify-center h-full gap-6 mt-10">
-          {/* Generate Code Section */}
           <div className="flex items-center gap-3 p-2 hover:bg-gray-800 rounded-md cursor-pointer transition duration-300 ease-in-out">
             <img
               src={Code}
@@ -18,7 +18,7 @@ function SideBar() {
             />
             <h2 className="text-lg sm:text-xl text-gray-200">Generate Code</h2>
           </div>
-          {/* Scan Code Section */}
+
           <div className="flex items-center gap-3 p-2 hover:bg-gray-800 rounded-md cursor-pointer transition duration-300 ease-in-out">
             <img
               src={Scanner}
@@ -28,6 +28,11 @@ function SideBar() {
             <h2 className="text-lg sm:text-xl text-gray-200">Scan Code</h2>
           </div>
         </div>
+      </div>
+
+      <div className="flex items-center gap-3 p-2 hover:bg-gray-800 rounded-md cursor-pointer transition duration-300 ease-in-out">
+        <img src={GitHub} className="h-10 w-10"></img>{" "}
+        <p className="text-gray-200">Github Repo</p>
       </div>
     </div>
   );
