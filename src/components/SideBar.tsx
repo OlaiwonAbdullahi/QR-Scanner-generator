@@ -30,9 +30,17 @@ function SideBar() {
         </div>
       </div>
 
-      <div className="flex items-center gap-3 p-2 hover:bg-gray-800 rounded-md cursor-pointer transition duration-300 ease-in-out">
-        <img src={GitHub} className="h-10 w-10"></img>{" "}
-        <p className="text-gray-200">Github Repo</p>
+      <div className="flex flex-col sm:flex-row items-center gap-3 p-2 hover:bg-gray-800 rounded-md cursor-pointer transition duration-300 ease-in-out">
+        <a href="" className="flex items-center gap-3">
+          <img
+            src={GitHub}
+            className="w-8 sm:w-10 h-8 sm:h-10"
+            alt="GitHub logo"
+          />
+          <p className="text-gray-200 text-base sm:text-lg lg:text-xl">
+            Github Repo
+          </p>
+        </a>
       </div>
     </div>
   );

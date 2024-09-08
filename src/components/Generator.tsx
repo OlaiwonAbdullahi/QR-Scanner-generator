@@ -17,7 +17,12 @@ function Generator() {
     <div className="bg-gray-300">
       {generatedText && (
         <a href="#" download={QRCode}>
-          <QRCode value={generatedText} fgColor="#0e0118" className="mt-10" />
+          <QRCode
+            value={generatedText}
+            fgColor="#0e0118"
+            bgColor="#d8d8d7"
+            className="mt-10"
+          />
         </a>
       )}
       <div className="input-here mt-4">
