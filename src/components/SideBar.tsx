@@ -1,13 +1,14 @@
 import Code from "../assets/Qr-code.svg";
 import Scanner from "../assets/Scanner.svg";
 import GitHub from "../assets/github.svg";
+import logo from "../assets/logo.png";
 
 function SideBar() {
   return (
     <div className="bg-gray-900 w-36 sm:w-40 md:w-48 lg:w-64 h-screen mt-0 mb-0 ml-0 py-8 px-3 sm:px-6 flex flex-col justify-between">
       <div>
-        <div className="text-2xl sm:text-3xl md:text-4xl text-gray-200 mb-20 lg:mb-28 text-center">
-          QRSG
+        <div className="mb-20  items-center justify-center ml-16">
+          <img src={logo} className="h-14 w-14"></img>
         </div>
         <div className="flex flex-col justify-center h-full gap-6 mt-10">
           <div className="flex items-center gap-3 p-2 hover:bg-gray-800 rounded-md cursor-pointer transition duration-300 ease-in-out">
