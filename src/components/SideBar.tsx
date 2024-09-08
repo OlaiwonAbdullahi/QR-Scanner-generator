@@ -31,7 +31,10 @@ function SideBar() {
       </div>
 
       <div className="flex flex-col sm:flex-row items-center gap-3 p-2 hover:bg-gray-800 rounded-md cursor-pointer transition duration-300 ease-in-out">
-        <a href="" className="flex items-center gap-3">
+        <a
+          href="https://github.com/OlaiwonAbdullahi/QR-Scanner-generator"
+          className="flex items-center gap-3"
+        >
           <img
             src={GitHub}
             className="w-8 sm:w-10 h-8 sm:h-10"
