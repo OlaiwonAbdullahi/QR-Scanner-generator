@@ -23,6 +23,7 @@ function Generator() {
       <div className="input-here mt-4">
         <input
           className="border-gray-900 border-2 rounded-l-lg mt-8 h-7 text-gray-900"
+          placeholder="Paste Your Link ....."
           type="text"
           value={text}
           onChange={handleChange}
