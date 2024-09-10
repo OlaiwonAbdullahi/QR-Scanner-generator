@@ -59,7 +59,7 @@ function Generator() {
 
       {generatedText && (
         <button
-          className="bg-blue-500 text-white rounded-lg mt-4 px-4 py-2"
+          className="bg-gray-900 text-white rounded-lg mt-4 px-4 py-2"
           onClick={handleDownload}
         >
           Download QR Code
