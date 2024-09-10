@@ -9,7 +9,7 @@ function Generator() {
     setGeneratedText(text); // This will store the text for QR code generation
   }
 
-  function handleChange(e) {
+  function handleChange(e: EventType) {
     setText(e.target.value);
   }
 
