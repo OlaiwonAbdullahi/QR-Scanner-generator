@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function SideBar() {
   return (
-    <div className="">
+    <nav>
       <div className="bg-gray-900 w-36 sm:w-40 md:w-48 lg:w-64 h-screen mt-0 mb-0 ml-0 py-8 px-3 sm:px-6 md:flex md:flex-col justify-between hidden">
         <div>
           <div className="mb-20  items-center justify-center ml-16">
@@ -53,19 +53,7 @@ function SideBar() {
           </a>
         </div>
       </div>
-
-      <div className="">
-        <div className="">
-          <img src={GitHub} alt="" />
-        </div>
-        <div className="">
-          <img src={GitHub} alt="" />
-        </div>
-        <div className="">
-          <img src={GitHub} alt="" />
-        </div>
-      </div>
-    </div>
+    </nav>
   );
 }
 

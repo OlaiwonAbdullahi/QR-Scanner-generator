@@ -1,4 +1,5 @@
 import Generator from "./components/Generator";
+import MobileNav from "./components/MobileNav";
 import Scanner from "./components/Scanner";
 import SideBar from "./components/SideBar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -9,6 +10,7 @@ function App() {
       <Router>
         <div className="">
           <SideBar />
+          <MobileNav />
         </div>
         <Routes>
           <Route path="/" element={<Generator />} />
