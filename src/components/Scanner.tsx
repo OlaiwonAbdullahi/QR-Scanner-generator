@@ -8,10 +8,10 @@ function Scanner() {
   useEffect(() => {
     const scanner = new Html5QrcodeScanner("reader", {
       qrbox: {
-        width: 250,
-        height: 250,
+        width: 300,
+        height: 300,
       },
-      fps: 5,
+      fps: 10,
     });
 
     scanner.render(success, error);
@@ -31,17 +31,21 @@ function Scanner() {
   }, []);
 
   return (
-    <div className="text-gray-900 bg-gray-900 flex flex-col justify-center pr-10">
+    <div className="text-gray-900 bg-gray-300 flex flex-col justify-center h-96 w-96">
       <div id="reader"></div>
       {scanResult && (
         <div className="mt-4 text-sm text-gray-950">
-          Scanned Result:
+          Link:
           <a
             href={"https://" + scanResult}
             className="font-semibold text-gray-950"
           >
             {scanResult}
           </a>
+          <br />
+          <button className="bg-gray-900 text-gray-300 rounded-md p-2">
+            <a href={"https://" + scanResult}>Visit Site</a>
+          </button>
         </div>
       )}
     </div>
