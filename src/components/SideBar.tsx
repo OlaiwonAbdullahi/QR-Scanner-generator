@@ -2,6 +2,7 @@ import Code from "../assets/Qr-code.svg";
 import Scanner from "../assets/Scanner.svg";
 import GitHub from "../assets/github.svg";
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 function SideBar() {
   return (
@@ -17,7 +18,9 @@ function SideBar() {
               className="w-8 sm:w-10 h-8 sm:h-10"
               alt="Generate Code Icon"
             />
-            <h2 className="text-lg sm:text-xl text-gray-200">Generate Code</h2>
+            <h2 className="text-lg sm:text-xl text-gray-200">
+              <Link to="/">Generate Code</Link>
+            </h2>
           </div>
 
           <div className="flex items-center gap-3 p-2 hover:bg-gray-800 rounded-md cursor-pointer transition duration-300 ease-in-out">
@@ -26,7 +29,9 @@ function SideBar() {
               className="w-8 sm:w-10 h-8 sm:h-10"
               alt="Scan Code Icon"
             />
-            <h2 className="text-lg sm:text-xl text-gray-200">Scan Code</h2>
+            <h2 className="text-lg sm:text-xl text-gray-200">
+              <Link to="/scanner">Scan Code</Link>
+            </h2>
           </div>
         </div>
       </div>
