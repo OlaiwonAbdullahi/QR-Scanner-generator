@@ -1,4 +1,5 @@
 import Generator from "./components/Generator";
+import Scanner from "./components/Scanner";
 import SideBar from "./components/SideBar";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       </div>
       <div className="basis-1/2">
         <Generator />
+        <Scanner />
       </div>
     </div>
   );
