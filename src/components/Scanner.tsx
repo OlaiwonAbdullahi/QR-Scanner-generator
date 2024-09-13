@@ -31,7 +31,7 @@ function Scanner() {
   }, []);
 
   return (
-    <div className="text-gray-900 bg-gray-300 flex flex-col justify-center h-96 w-96">
+    <div className="text-gray-900 bg-gray-300 flex flex-col justify-center h-96 w-96   mx-auto ">
       <div id="reader"></div>
       {scanResult && (
         <div className="mt-4 text-sm text-gray-950">

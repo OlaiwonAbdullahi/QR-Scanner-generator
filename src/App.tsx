@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="flex bg-gray-300">
       <Router>
-        <div className="basis-1/2">
+        <div className="">
           <SideBar />
         </div>
         <Routes>
