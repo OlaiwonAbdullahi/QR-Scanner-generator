@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="flex bg-gray-300">
+    <div className="flex bg-gray-600">
       <Router>
         <div className="">
           <SideBar />

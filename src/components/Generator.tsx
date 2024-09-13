@@ -34,7 +34,7 @@ function Generator() {
   }
 
   return (
-    <div className="bg-gray-300 h-screen flex flex-col justify-center items-center mx-auto pl-0">
+    <div className="bg-gray-600 h-screen flex flex-col justify-center items-center mx-auto pl-0">
       {generatedText && (
         <div id="qr-code" className="mt-10">
           <QRCode value={generatedText} fgColor="#0e0118" bgColor="#d8d8d7" />
